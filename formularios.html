@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIOS</h1>
+    <h2>Ejercicio 1</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php"></form>
+        <p>
+            <label for="nombre">Nombre: </label><input type="text" name="nombre" maxlength="10" placeholder="Ingresar nombre">
+        </p>
+        <p>
+            <label for="edad">Edad: </label><input type="text" name="edad" minlength="2" value="35">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </section>
+    <h2>Ejercicio 2 Label | Range</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p>
+                <label for="nombre">Nombre: </label><input type="text" name="nombre" maxlength="10" placeholder="Ingresar nombre">
+            </p>
+            <p><label for="edad">Edad: <input type="number" name="edad" placeholder="Ingresar Edad"></label></p>
+            <p><label for="telefono">Telefono: <input type="tel" name="telefono" placeholder="Ingresar telefono" name="" id=""></label></p>
+            <p><label for="url">Sitio Web: <input type="url" name="SitioWeb" placeholder="Ingresar URL"></label></p>
+            <p><label for="altura">Altura: </label><input type="range" name="altura" min="0" max="100" value="20"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </section>
+    <h2>Ejercicio 3 Radio | Checkbox | Button</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p>
+                <label for="nombre">Nombre: </label><input type="text" name="nombre" maxlength="10" placeholder="Ingresar nombre">
+            </p>
+            <p><label><input type="radio" name="edad" value="15" checked>15 años</label></p>
+            <p><label><input type="radio" name="edad" value="20" >20 años</label></p>
+            <p><label><input type="radio" name="edad" value="25" >25 años</label></p>
+            <p><label><input type="radio" name="edad" value="30" >30 años</label></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </section>
+    <h2>Checkbox</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p>
+                <label for="nombre">Nombre:</label><input type="text" name="nombre" maxlength="10" placeholder="Ingresar nombre">
+            </p>
+            <p><label><input type="checkbox" value="15" checked>15 años</label></p>
+            <p><label><input type="checkbox" value="20" checked>20 años</label></p>
+            <p><label><input type="checkbox" value="25">25 años</label></p>
+            <p><label><input type="checkbox" value="30">30 años</label></p>
+        </form>
+    </section>
+</body>
+</html>
