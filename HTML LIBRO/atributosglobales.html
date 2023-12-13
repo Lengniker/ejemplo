@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Disable</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p><label for="nombre">Nombre: <input type="text" name="nombre" placeholder="Ingresar nombre"></label></p>
+            <p><label for="edad">Edad: <input type="text" name="edad" disabled></label></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </section>
+    <h2>readonly | "Edad"</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p><label for="nombre">Nombre: <input type="text" name="nombre" placeholder="Ingresar nombre"></label></p>
+            <p><label for="edad">Edad: <input type="text" name="edad" readonly value="25"></label></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </section>
+    <h2>formvalidate - required | "Correo"</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p>
+                <label for="correo">Correo: <input type="email" name="correo" placeholder="Ingresar email" required></label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="submit" value="Grabar" formnovalidate>
+            </p>
+        </form>
+    </section>
+    <h2>pattern | "Codigo postal"</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p>
+                <label name="codigpostal">Codigo Postal: 
+                    <input pattern="[0-9]{5}" name="codigopostal" placeholder="Ingresar Codigo Postal" 
+                    title="Codigo postal invalido" required></label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </section>
+    <h2>multiple | "Correo"</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p>
+                <label name="correo">Correo: 
+                    <input type="email" name="correo" placeholder="Ingresar correo" multiple required></label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </section>
+    <h2>autocomplete | "Buscar"</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p>
+                <label name="buscar">Buscar: 
+                    <input type="search" name="buscar" placeholder="Buscar" 
+                    autocomplete="off" required></label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </section>
+    <h2>autofocus | "Edad"</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p><label for="nombre">Nombre: <input type="text" name="nombre" placeholder="Ingresar nombre"></label></p>
+            <p><label for="edad">Edad: <input type="number" name="edad" placeholder="Ingresar edad" autofocus></label></p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </section>
+    <h2>spellcheck | "Texto"</h2>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p><label for="texto">Texto: <textarea name="nombre" cols="50" rows="6"
+                spellcheck="false" placeholder="Ingresar texto"></textarea></label></p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </section>
+</body>
+</html>
